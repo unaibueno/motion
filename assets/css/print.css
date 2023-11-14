@@ -1,0 +1,12 @@
+body { 
+  color : white; 
+  background : #ffffff; 
+  font-family : "Times New Roman", Times, serif;
+  font-size : 12pt; 
+}
+
+
+
+nav, sidebar, footer, header, aside { 
+  display : none; 
+}

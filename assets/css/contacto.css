@@ -1,0 +1,168 @@
+.formulario-contenido{
+    background-color: #222222;
+    border-radius: 15px;
+}
+
+form{
+    display: block !important;
+    width: 90%;
+    padding-bottom: 30px;
+    padding: 35px;
+    font-family: 'SF Pro', sans-serif;
+
+}
+
+input{
+    color: white;
+    background-color: transparent;
+    height: 45px;
+    width: 100%;
+    gap: 1em;
+    display: block;
+    margin: 12px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding-left: 18px;
+
+}
+
+textarea{
+    background-color: transparent;
+    margin: 10px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding: 20px;
+    font-family: 'SF Pro', sans-serif;
+    color: white;
+    letter-spacing: 0.2px;
+    width: 100%; /* El campo de texto ocupa todo el ancho */
+    display: block; /* Colocar el campo de texto debajo de los campos anteriores */
+    margin-bottom: 12px; /* Espacio entre el campo de texto y los campos de nombre, apellidos y correo */
+    box-sizing: border-box; /* Incluir el ancho del borde y el relleno en el ancho total del campo */
+    font-size: 18px;
+    font-weight: 600;
+  
+}
+
+
+
+form input::placeholder{
+    color: #a9a9a9;
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+form input:focus::placeholder, textarea:focus::placeholder, textarea:hover::placeholder {
+    color: #fccb9f;
+}
+
+
+form input:focus, textarea:focus{
+  border: 2px solid #fccb9f;
+  outline: none;
+  color: #fccb9f;
+
+}
+form input:hover{
+    border: 2px solid #fccb9f;
+    color: #fccb9f;
+    outline: none;
+}
+
+
+form input[type="text"] {
+    width: 100%; /* Se ha reducido ligeramente el ancho para tener en cuenta el espacio entre los elementos */
+    display: block; /* Cambiado de "block" a "inline-block" */
+    box-sizing: border-box; /* Incluir el ancho del borde y el relleno en el ancho total del campo */
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+
+form input[type="email"] {
+    width: 100%; /* El campo de correo ocupa todo el ancho */
+    display: block; /* Colocar el campo de correo debajo de los campos de nombre y apellidos */
+    margin-bottom: 12px; /* Espacio entre el campo de correo y los campos de nombre y apellidos */
+    box-sizing: border-box; /* Incluir el ancho del borde y el relleno en el ancho total del campo */
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+.boton-formulario{
+    text-transform: uppercase; 
+    font-weight: 700;
+    font-size: 17px;
+    color: white;
+    background-color: transparent;
+    height: 45px;
+    width: 100%;
+    gap: 1em;
+    display: block;
+    margin: 12px;
+    border: 2px solid gray;
+    border-radius: 15px;
+    padding-left: 18px;
+}
+
+.boton-formulario:hover{
+    background-color: #fccb9f; 
+    color: #222222;
+
+}
+
+
+
+
+.contenido-otros-contactos {
+    margin:0;
+    z-index: 1;
+    display: flex;   
+    background-color: #222222;
+    border-radius: 15px;
+
+}
+
+.otros-contactos-left {
+    left: 30%;
+    width: 50%;
+	padding-bottom: 30px;
+}
+
+.otros-contactos-right {
+    right: 0;
+    width: 50%;
+    margin: 30px;
+}
+
+.otros-contactos-left #titulo{
+    color: white;
+    padding-left: 40px;
+	padding-top: 40px;
+    font-size: 35px;
+    line-height: 1.3; 
+    font-family: 'Graphik', sans-serif;
+    font-weight: 600;
+}
+.otros-contactos-left .datos{
+	padding-top: 10px;
+	padding-left: 40px;
+	line-height: 1.6; 
+    font-size: 25px;
+	color: white;
+}
+
+.mapa-contacto{
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+}
+
+

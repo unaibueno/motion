@@ -1,0 +1,103 @@
+.layout{
+	width: 100%;
+	display: grid;
+	grid-template-rows: repeat(3, 50%);
+	grid-template-columns: repeat(2, 50%);
+	gap: 10px; 
+}
+
+.imagen-producto {
+    width: 90%;
+    z-index: 2;
+}
+
+.producto1, .producto2, .producto3, .producto4{
+    width: 100%;
+    z-index: 10;
+    cursor: pointer;
+    transition: transform 0.5s ease; /* Aplicamos una transición suave a la propiedad transform */
+    padding: 18px;
+    margin: -30px 0 -30px 0;
+}
+
+.producto1:hover, .producto2:hover, .producto3:hover, .producto4:hover{
+    transform: scale(1.03); /* Al hacer hover, ampliamos el elemento al 120% de su tamaño original */
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+
+
+
+.modal1, .modal2, .modal3, .modal4 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 10;
+    display: none;
+
+}
+
+.modal-content {
+    background-color: #222222;
+    width: 80%;
+    max-width: 800px;
+    margin: 10% auto;
+    padding: 25px;
+    border-radius: 15px;
+    position: relative;
+    color: white;
+    font-family: 'SF pro', sans-serif;
+    z-index: 100;
+}
+
+.modal-content p{
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: left;
+    margin-bottom: 20px;
+    
+}
+
+.modal-content h2{
+    text-transform: uppercase;
+    font-family: 'Graphik', sans-serif;
+    font-size: 33px;
+    line-height: 2;
+    letter-spacing: 1px;
+    color:#fccb9f;
+
+}
+.modal-content button{
+    padding: 10px;
+    font-size: 17px;
+    border: solid 2px #fccb9f;
+    border-radius: 10px;
+    font-weight: 600;
+    color: black;
+    text-align: center;
+    background-color: #fccb9f !important; ;
+    cursor: pointer !important;
+    
+}
+
+
+.close-btn {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 50px;
+    cursor: pointer;
+    color: white ;
+    z-index: 100;
+}
+
+.close-btn:hover{
+    color:#fccb9f;
+
+}
+
+

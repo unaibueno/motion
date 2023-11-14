@@ -1,0 +1,120 @@
+
+/* content and sidebar layout */
+#content {
+	position: relative;
+	width: 100%; 
+    margin: -30px auto 30px auto; /* Centrado horizontal */
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+/* columns */
+#content ul.column {
+	width: 100%;
+	padding: 0;
+	margin: 10px;
+	list-style: none;
+}
+
+#content ul.column li {
+	float: left;
+	width: 263px; /*Set default width*/
+	display: inline;
+}
+
+#content .block {
+	height: 375px;
+	margin-bottom: 0px;
+	font-size: 1em;
+	margin-right: 10px; /*Creates the 10px gap between each column*/
+	padding: 18px;
+	background: #222222;
+	color: white;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#content .block a {
+	color: #FFF;
+	font-family: 'SF PRO', sans-serif;
+	line-height: 1.4;
+}
+	
+#content .block p {
+	color: #FFF;
+	font-family: 'SF PRO', sans-serif;
+	line-height: 1.4;
+	font-size: 17px;
+	margin-top: 10px;
+}
+	
+#content .block img {
+  /*Flexible image size with border*/
+	width: 99%;  /*Took 1% off of the width to prevent IE6 bug*/
+	height: 45%;
+	margin: 0 auto;
+	display: block;
+	object-fit: cover; /* Opcional: cubre el área sin distorsionar */
+	-ms-interpolation-mode: bicubic; /*prevents image pixelation IE 6/7 */
+	border-radius: 6px;
+	margin-bottom: 20px;
+}
+/* end of column configuration */
+	
+#content::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* end of column configuration */
+	
+/* ESTILOS DEL APARTADO DE CONTACTO EN LA PAGINA PRINCIPAL */
+.contenido-otros-contactos {
+    margin:0;
+    z-index: 1;
+    display: flex;   
+    background-color: #222222;
+    border-radius: 15px;
+
+}
+
+.otros-contactos-left {
+    left: 30%;
+    width: 50%;
+	padding-bottom: 30px;
+}
+
+.otros-contactos-right {
+    right: 0;
+    width: 50%;
+    margin: 30px;
+}
+
+.otros-contactos-left #titulo{
+    color: white;
+    padding-left: 40px;
+	padding-top: 40px;
+    font-size: 40px;
+    line-height: 1.3; 
+    font-family: 'Graphik', sans-serif;
+    font-weight: 600;
+}
+.otros-contactos-left .datos{
+	padding-top: 10px;
+	padding-left: 40px;
+	line-height: 1.6; 
+    font-size: 25px;
+	color: white;
+}
+
+.mapa-contacto{
+    display: block;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 10px;
+    
+}
+
+

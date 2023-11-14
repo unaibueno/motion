@@ -1,0 +1,76 @@
+
+.seccion-servicios .split {
+    margin:0;
+    z-index: 1;
+    display: flex;   
+    background-color: #222222;
+    border-radius: 15px;
+}
+
+.seccion-servicios .servicio-container {
+    left: 30%;
+    width: 50%;
+    margin-bottom: -20px;
+    cursor: pointer;
+
+}
+
+.seccion-servicios .respuesta-container {
+    right: 0;
+    width: 50%;
+    background-color: #333333;
+    border-radius: 0 15px 15px 0;
+}
+
+.seccion-servicios ul{
+    list-style: none;
+    padding: 50px;
+}
+
+.seccion-servicios .servicios{
+    background-color: #333333;
+    border-radius: 40px;
+    margin-bottom: 30px;
+    height: 80px;
+    color: white;
+    text-align: left;
+    font-family: 'SF PRO', sans-serif;
+    border-radius: 15px;
+    font-size: 20px;
+}
+
+.seccion-servicios .servicios-text{
+   display: block;
+   padding: 30px;
+}
+
+
+
+.seccion-servicios  .servicios.active {
+    background-color: #fccb9f;
+}
+  
+
+.seccion-servicios  .servicios.active .servicios-text {
+    color: black;
+    font-weight: 500;
+
+}
+  
+.seccion-servicios  span::selection{
+    display: none;
+}
+
+.seccion-servicios  .answer-text {
+    display: none;
+  }
+  
+.seccion-servicios  .answer-text{
+    display: block;
+    color: white;
+    font-family: 'SF PRO', sans-serif;
+    font-size: 23px;
+    line-height: 40px; /* Establece la altura de línea en 24 píxeles */
+
+}
+
